@@ -1,0 +1,270 @@
+:root{
+    --default-font-size: 1.3vw;
+    --h-increment: 0.5vw;
+    --default-title-color: rgb(7, 87, 141);
+    --default-text-color: black;
+    --bg-color: white;
+    --text-font: Arial, Helvetica, sans-serif;
+    --h-font: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: var(--bg-color) !important;
+}
+
+.box{
+    border: var(--default-title-color);
+    border-style: solid;
+    border-width: 0.5vw;
+    border-radius: 1vw;
+}
+
+.active{
+    background-color: var(--default-title-color) !important;
+    color: var(--bg-color) !important;
+}
+
+.button{
+    background-color: inherit;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(var(--default-font-size) + (1 * var(--h-increment)));
+    width: 100%; 
+    border-width: 0.1vw;
+    border-radius: 1vw;
+    border: var(--default-title-color);
+    border-style: solid;
+    color: var(--default-title-color);
+}
+
+.button:hover{
+    background-color: var(--default-title-color);
+    filter: brightness(85%);
+    border-style: solid !important;
+    color: var(--bg-color) !important;
+}
+
+.button:active{
+    filter: brightness(120%);
+    border-style: solid !important;
+}
+
+h1{
+    font-size: calc(var(--default-font-size) + (5 * var(--h-increment))) !important;
+    font-weight: bolder !important;
+    color: var(--default-title-color) !important;
+    font-family: var(--h-font);
+}
+
+h2{
+    font-size: calc(var(--default-font-size) + (2 * var(--h-increment))) !important;
+    font-weight: bold !important;
+    color: var(--default-title-color) !important;
+    padding-top: 3vw !important;
+    padding-left: 1.5vw !important;
+    padding-bottom: 0.5vw !important;
+    font-family: var(--h-font);
+}
+
+h3, th{
+    font-size: calc(var(--default-font-size) + (1 * var(--h-increment))) !important;
+    font-family: var(--h-font);
+    font-weight: bold !important;
+    color: var(--default-title-color) !important;
+    padding-top: 2vw !important;
+    margin-bottom: 0.2vw !important;
+}
+
+.icon{
+    width: 60%;
+    height: 60%;
+}
+
+.fullSize{
+    width: 100%;
+    height: 100%;
+}
+
+.gaming{
+    width: 45%;
+    height: 45%;
+}
+
+.padded{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.underlined{
+    border-bottom: 0.3vw;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: var(--default-title-color);
+}
+
+.text{
+    font-size: var(--default-font-size);
+    color: var(--default-text-color);
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+}
+
+.textIn{
+    font-size: var(--default-font-size);
+    color: var(--default-text-color);
+    border-color: var(--default-title-color);
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.checkbox{
+    top: 1vw;
+    height: 1.5vw;
+    width: 1.5vw;
+    accent-color: var(--default-title-color);
+}
+
+.radio{
+    height: 1.5vw;
+    width: 1.5vw;
+    accent-color: var(--default-title-color);
+    color: var(--default-text-color);
+}
+
+.radioText{
+    font-weight: normal;
+    color: var(--default-title-color);
+}
+
+.separator{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+textarea{
+    width: 100%;
+    height: 28vw;
+    border-color: var(--default-title-color);
+    color: var(--default-text-color);
+    background-color: var(--bg-color);
+}
+
+.cards{
+    width: 60%;
+    height: 60%;
+}
+
+footer{
+    font-size: var(--default-font-size);
+}
+
+.linkImg{
+    height: 7.5vw;
+    width: 7.5vw;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: var(--default-font-size);
+    color: var(--default-text-color);
+}
+
+figure{
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 75%;
+}
+
+table::after{
+    content: "";
+    background: url("../imgs/polc.jpg");
+    opacity: 0.2; /* set your opacity */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    width: 100%; /* your width */
+    height: 100%; /* your height */
+    display: block;
+    position: relative;
+    margin-top: 3vw !important;
+}
+
+tbody{
+    width: 100%;
+    height: 100%;
+    display: table;
+    color: var(--default-text-color);
+}
+
+td{
+    font-size: var(--default-font-size);
+    font-weight: bold;
+    width: calc(100%/3);
+    border-bottom: 0.3vw !important;
+    border-style: solid !important;
+    border-color: var(--default-title-color) !important;
+    padding-bottom: 0.7vw;
+}
+
+th{
+    border-bottom: 0.6vw !important;
+    border-style: solid !important;
+    border-color: var(--default-title-color) !important;
+    padding-bottom: 0.5vw;
+}
+
+.borderless{
+    border-style: none !important;
+    padding-bottom: 3vw !important;
+}
+
+caption{
+    width: 100%;
+    display: table;
+}
+
+summary::after {
+    display: inline-block;
+    content: '▶';
+    font-size: var(--default-font-size);
+    transition: 0.2s;
+    
+}
+
+details[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+details > summary {
+    list-style: none;
+}
+
+a{
+    color: var(--default-title-color) !important;
+}
+
+a:visited{
+    color: var(--default-text-color);
+}  
+
+::placeholder{
+    color: var(--default-text-color);
+    opacity: 0.75;
+}
+
+b{
+    color: var(--default-text-color);
+}
